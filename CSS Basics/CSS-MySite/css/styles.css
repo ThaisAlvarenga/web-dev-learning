@@ -1,0 +1,115 @@
+/* color palette from ColorHunt: 
+#40DFEF
+#B9F8D3
+#FFFBE7
+#E78EA9
+*/
+
+body{
+    margin: 0;
+    text-align: center;
+    font-family: Verdana, sans-serif;
+}
+
+div{
+    /* width: 200px;
+    height: 200px; */
+
+    /*pasdding: space between the elements in the div and the border. It increases the sixe of your div box. 
+       border: the border around width of the div. It doesn't incread the size of your box.
+        -for example, if you div is 300px wide and you border is 50px, then alltogether the div is 350 pixels
+        margin: the space between the div and other elements outside it
+        margin does not affect the size of the div
+       */
+}
+
+.top-container{
+    background-color: #40DFEF;
+    position:relative;
+    padding-top: 100px;
+    width: 100%;
+    /* padding: 20px; */
+    /* border: 10px solid; */
+    /* margin: 10px; */
+}
+
+.middle-container{
+    background-color: #B9F8D3;
+}
+
+.bottom-container{
+    background-color: #E78EA9;
+}
+
+h1{
+    margin-top: 0;   
+}
+
+
+p{
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-left: 0px;
+}
+
+span{
+    text-decoration: underline;
+}
+
+.top-cloud{
+    position: absolute;
+    right: 300px;
+    top: 50px;
+
+}
+
+.bottom-cloud{
+    position: absolute;
+    left: 300px;
+    bottom: 300px;
+
+}
+
+/*
+
+.red{
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 200px;
+    top: 707px;
+    /* RELATIVE POSITION EXPERIMENT
+    display: inline-block;
+    position: relative;
+    left: 210px; */
+    /*
+}
+/*
+.blue{
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 607px;
+    left: 100px;
+    /* RELATIVE POSITION EXPERIMENT
+    display: inline-block;
+    position: relative;
+    right: 100px; */
+    
+}
+/*
+.yellow{
+    margin: 0;
+    background-color: yellow;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    /* RELATIVE POSITION EXPERIMENT
+    display: inline-block;
+    position: relative;
+    right: 100px; */
+ /*   
+}
+*/

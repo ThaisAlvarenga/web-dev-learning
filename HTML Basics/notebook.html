@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <!-- head holds information about the website and tells the browser how to handle the page-->
+<head>
+    <!-- meta elements gives extra meta data (associate data) to your html document -->
+
+    <!-- charset tells what encoder is being used, in this case, the UTF-8 (all the available characters that will display correctly on your website)
+        
+        - using the wrong character set will make it look weird. This is called mojibake
+
+        - UTF-8 is the standard because it includes all international symbols and emojis-->
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta description="this tells the browser what the website is about. If you google it, this is what will appear on the search"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- the title is the title of your page, which appears on the tab of your browser-->
+    <title>Notebook</title>
+<!-- internal css styles are good for page-specific changes, but we usually want to have a separate css file for the styling-->
+    <style>
+        
+        .borders hr{
+            border-style: none none none none;
+            /* border-top-style: dotted; */
+            border-color: #D9D7F1;
+            border-width: 10px;
+            width: 5%;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h2>HTML</h2>
+    <!-- headings are used to give the order of importance of certain elements.
+         they only go from h1 to h6 -->
+         <h1>This is a LEVEL 1 heading, h1</h1>
+         <h2>LEVEL 2 heading, h2</h2>
+         <h3>LEVEL 3 heading, h3</h3>
+         <h4>LEVEL 4 heading, h4</h4>
+         <h5>LEVEL 5 heading, h5</h5>
+         <h6>LEVEL 6 heading, h6</h6>
+     
+         <br>
+     
+         <!-- <center> aligns things in the center of the screen.-->
+         <center> <h2> This is centered</h2></center>
+     
+     
+         <!-- hr is a line. By default, the height is one pixel, but you can change it with the size="" class, you can also add or remove shading from it-->
+         
+         <hr size=" 50" noshade>
+         <hr size=" 25" noshade>
+         <hr size=" 10" noshade>
+         <hr>
+     
+         <!--br is a line break or space in your html file-->
+         <br>
+         
+         <p> This is a paragraph</p>
+     
+         <p class="notes"> <strong>index.html</strong> is the name most developers give to the home page of their  website</p>
+         <p class="notes"> ! + enter (shift + 1 + enter) is the shortcut to have your html setup created by VS Code. This is the <strong> Boilerplate template</strong>, or a format that you reuse in your project files.</p>
+
+         <p> UTF-8 allows me to write حبيبي or an emoji's like 😻 </p>
+
+         <p> For italics, <em>em</em> and <i>i</i> will do the same thing visually but, <em>em</em> will tell the browser to put <em> emphasis</em> in whatever is in between the element, while <i>i</i> will only <i>italize</i> the words. It's good practice to us em because we want to use HTML elements to structure information, not to stylize it.</p>
+
+         <p>Something similar happens with <strong>strong</strong> and <b>bold (b)</b></p>
+
+         <p> Unordered lists are created using <strong>ul</strong> elements with <strong>li</strong> elements for each bullet point. For example:
+             <ul>
+                 <li>This is a list</li>
+                 <li>That is not ordered</li>
+                 <li>You can also have
+                     <ul>
+                         <li>sublists</li>
+                         <li> in it</li>
+                     </ul>
+                 </li>
+             </ul>
+             You can also create ordered lists <strong>ol</strong> and change the numbers to other things using the <em>type</em> tag. 
+             <ol type="a">
+                <li><a href="https://drive.google.com/drive/u/0/folders/1lGqQTKXkxXewoL-1ycfbDK7K4TQApQiB"> Writing </a> </li>
+                <li>Reading</li>
+                <li>Drawing</li>
+                <li>Doing technical things like:
+                    <ol type="I">
+                        <li>Animating</li>
+                        <li>Making webpages</li>
+                    </ol>
+                </li>
+            </ol>
+            Note: <strong>ul</strong> does not have <em>type</em>
+         </p>
+         <p>For your links (anchor element) <strong>a</strong>, always put them inside the bigger element. For example <strong><a href="https://www.google.com/">link to Google</a></strong></p>
+
+         <p> This image is hosted on Facebook. If Facebook dies, then the browser won't be able to access the Facebook server and this image won't appear.</p>
+         <img src="https://scontent-lga3-2.xx.fbcdn.net/v/t39.30808-6/262063749_957718925153694_5944972822821583877_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=wN91kd4LwxgAX_NkP_j&tn=sS2xQXO5VyVcUmgg&_nc_ht=scontent-lga3-2.xx&oh=00_AT9JlqRUnNM3IdmIjntdIZ6hUw9Q2hjfW1Onw-Ygb6qkSg&oe=62779386" alt="this is Thais" width="200px">
+         <p>Best practice would be to have it on a folder in your project.</p>
+
+         <p>You can also create tables for your website</p>
+         <table>
+             <thead>
+                 <tr>
+                     <!-- table heading-->
+                     <th>Heading 1</th>
+                     <th>Heading 2</th>
+                 </tr>
+             </thead>
+             <tbody>
+                 <!-- table row-->
+                 <tr>
+                     <!-- table data-->
+                     <td>T1</td>
+                     <td>T2</td>
+                 </tr>
+                 <tr>
+                     <td>t1</td>
+                     <td>t2</td>
+                 </tr>
+             </tbody>
+             <tfoot>
+                 <tr>
+                     <td>footer 1</td>
+                     <td>footer 2</td>
+                 </tr>
+             </tfoot>
+         </table>
+
+         <!-- Command + Control + Space can be used to write emoji 🙈-->
+         <hr>
+
+         <h3>Forms</h3>
+         <form action="">
+             <label for="">Name</label>
+             <input type="text" name="" id="">
+             <br>
+             <label for="">Upload file </label>
+             <input type="file" name="" id="">
+             <br>
+             <label for="">This is a color picker </label>
+             <input type="color">
+             <br>
+             <label for="">This is a button </label>
+             <input type="button" value="">
+             <br>
+             <label for="">Date input </label>
+             <input type="date" name="" id="">
+             <br>
+             <label for="">Search input </label>
+             <input type="search" name="" id="">
+             <br>
+             <label for="">Range input </label>
+             <input type="range" name="" id="">
+             <br>
+             <input type="submit">
+         </form>
+         <p>Note: Forms don't do anything unless you assigned behavior (javascript) to it.</p>
+
+         <hr>
+         <h2>CSS</h2>
+         <p>CSS changes the properties of your HTML elements.</p>
+         <p>For this purpose, you should have a <strong>separate css folder</strong> in your project.</p>
+         <p>Where can I find colors for my stylesheets?</p>
+         <ul>
+             <li>A good place to look for colors and color palettes is <a href="https://colorhunt.co/">Color Hunt</a>.
+            </li>
+            <li>You can also search for color mdn and see which keywords you can use to define color.</li>
+         </ul>
+         <p>No website is completely unstyled. Even before we add css, there already is a default css being assigned by the browser. You can read more about the default style <a href="https://www.w3schools.com/cssref/css_default_values.asp"> here</a></p>
+         <p><strong>Pesticide</strong> is a Chrome extension that allows you to see the boxes/grids in your webpage. Use it to check your layouts.</p>
+         <p>You can change the <em>height</em> of all the elements except the body. </p>
+         <p>Border style</p>
+         <ul class="borders">
+             <li>Changes the borders of an element's box</li>
+             <li>Has several border styles:</Head>
+                <ul>
+                    <li>dotted</li>
+                    <hr style="border-style: dotted none none none;">
+                    <li>dashed</li>
+                    <hr style="border-style: dashed none none none;">
+                    <li>solid</li>
+                    <hr style="border-style: solid none none none;">
+                    <li>double</li>
+                    <hr style="border-style: double none none none;">
+                    <li>groove</li>
+                    <hr style="border-style: groove none none none;">
+                    <li>and <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-style">more here</a></li>
+                </ul>
+            </li>
+            <br>
+             <li>When four values are specified, the styles apply to the top, right, bottom, and left in that order (clockwise).</li>
+         </ul>
+         
+</body>
+
+</html>

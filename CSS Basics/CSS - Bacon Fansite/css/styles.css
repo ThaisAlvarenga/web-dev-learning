@@ -1,0 +1,33 @@
+/*html selectors*/
+h1{
+    color: red;
+}
+
+img{
+    background-color: red;
+}
+
+/* Class Selectors */
+
+/*elements can have an infinite number of class selectors
+    class selestors are more specific than html selectors
+    they also have priority over html selectors
+*/
+.bacon{
+    background-color: antiquewhite;
+}
+
+.broccoli{
+    background-color: green;
+}
+
+/* ID Selectors */
+/* ID Selectors can only happen ONCE in the html index and every     
+    element can only have one ID
+    ID's have priority over html and class selestors
+    they are used more sparingly in the html 
+    their primary function is not necessarily being used to modify the style of the element*/
+#heading {
+    color: aqua;
+    background-color: blue;
+}
